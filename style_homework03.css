@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* border: 1px solid red; */
+}
+p {
+  color: blue;
+  font-size: 20px;
+  padding: 5px 5px;
+}
+.container {
+  display: flex;
+  margin-top: 5px;
+  background-color: rgb(247, 247, 183);
+  width: 100%;
+  border-radius: 18px;
+  padding: 30px 40px;
+}
+.container > * {
+  flex-grow: 1;
+  display: flex;
+  background-color: white;
+}
+.nav1 {
+  padding: 5px;
+  gap: 8px;
+}
+.nav1 > i {
+  padding-top: 2px;
+  font-size: 25px;
+  color: blue;
+}
+.nav1-1 {
+  display: flex;
+  background-color: lightgray;
+  padding: 4px 4px;
+  border-radius: 12px;
+}
+.nav1-1 > i {
+  display: flex;
+  align-items: center;
+}
+input {
+  border: none;
+  padding-left: 4px;
+  background-color: lightgray;
+}
+.nav2 {
+  flex-grow: 1.5;
+}
+.nav2 .subnav2:first-child {
+  color: blue;
+  border-bottom: 2px solid blue;
+}
+.subnav2 {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+.nav3 {
+  position: relative;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 5px;
+}
+.subnav3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray;
+  border-radius: 50%;
+  width: 27px;
+  overflow: hidden;
+}
+.subnav3 i {
+  font-size: 15px;
+}
+i.fa-circle-plus {
+  font-size: 12px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  position: fixed;
+  color: red;
+}
+.tag {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  right: 2px;
+  bottom: 3px;
+}
+.tag i {
+  font-size: 10px;
+}
